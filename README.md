@@ -2,4 +2,6 @@
 
 `Portfolio 2 Nextjs Starter Template` is a ready-to-use template for building web applications using the Next.js framework. Next.js is a React-based web framework that enables server-side rendering, automatic code splitting, and efficient client-side routing. The Portfolio 2 Nextjs Starter Template provides a basic structure and set of features to help developers get started with Next.js quickly.
 
-https://free-templates.cc/template/portfolio-2-nextjs-starter-template
+Template URL: https://free-templates.cc/template/portfolio-2-nextjs-starter-template
+
+Demo URL: https://portfolio-2-nextjs-starter-template.free-templates.cc/
