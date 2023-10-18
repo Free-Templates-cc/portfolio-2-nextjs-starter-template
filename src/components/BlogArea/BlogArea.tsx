@@ -4,9 +4,19 @@ import BlogImage2 from "public/images/2.webp"
 import BlogImage3 from "public/images/3.webp"
 import BlogImage4 from "public/images/4.webp"
 import Image from "next/image";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import dynamic from "next/dynamic";
+import { CarouselProps } from "react-responsive-carousel";
+
+const Carousel = dynamic(() => import("react-responsive-carousel").then((mod) => mod.Carousel), {
+  ssr: false,
+});
 
 
 const BlogArea = () => {
+
+  const carouselConfig = { ariaLabel: undefined, } as CarouselProps
+
   return (
     <div className="creative_blog_area">
       <div className="outline_text blog d-none d-lg-block ">Blog</div>
@@ -29,7 +39,7 @@ const BlogArea = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className="creative_blog_active owl-carousel">
+            <Carousel className="creative_blog_active owl-carousel" {...carouselConfig}>
               <div className="single_blog">
                 <div className="thumb">
                   <a href="#">
@@ -134,7 +144,7 @@ const BlogArea = () => {
                   </div>
                 </div>
               </div>
-            </div>
+              </Carousel>
           </div>
         </div>
       </div>
