@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 import LogoImage from "public/images/logo.webp"
 import Image from "next/image";
 
-const Footer = () => {
+const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
