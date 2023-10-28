@@ -31,7 +31,7 @@ jobs:
           cmd: build # will run `yarn build` command
 
       - name: Publish to surge.sh
-        uses: dswistowski/surge-sh-action@v1.0.3
+        uses: dswistowski/surge-sh-action@v1
         with:
           domain: portfolio-2-nextjs-starter-template.free-templates.cc
           login: ${{ secrets.SURGE_LOGIN }}
