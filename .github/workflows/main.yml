@@ -28,7 +28,7 @@ jobs:
       - name: Build production bundle
         uses: borales/actions-yarn@v4
         with:
-          cmd: export # will run `yarn build` command
+          cmd: build # will run `yarn build` command
 
       - name: Publish to surge.sh
         uses: dswistowski/surge-sh-action@v1.0.1
