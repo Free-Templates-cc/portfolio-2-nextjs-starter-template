@@ -4,6 +4,7 @@ import BlogImage2 from "public/images/2.webp"
 import BlogImage3 from "public/images/3.webp"
 import BlogImage4 from "public/images/4.webp"
 import Image from "next/image";
+import RBCarousel from "react-bootstrap-carousel";
 
 const BlogArea = () => {
 
@@ -29,7 +30,13 @@ const BlogArea = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-         
+          <RBCarousel
+              animation={true}
+              slideshowSpeed={2000}
+              defaultActiveIndex={0}
+              version={4}
+              className="creative_blog_active"
+            >
               <div className="single_blog">
                 <div className="thumb">
                   <a href="#">
@@ -134,7 +141,7 @@ const BlogArea = () => {
                   </div>
                 </div>
               </div>
-           
+           </RBCarousel>
           </div>
         </div>
       </div>

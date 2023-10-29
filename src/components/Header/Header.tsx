@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import LogoImage from "public/images/logo.webp"
 import Image from "next/image";
+import Link from "next/link";
 import useVerticalScrollEvent from "@/hooks/useVerticalScrollEvent";
 
 const Header = () => {
@@ -23,9 +24,9 @@ const Header = () => {
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-2">
                 <div className="logo">
-                  <a href="index.html">
+                  <Link href="/">
                     <Image src={LogoImage} alt="Logo" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-xl-9 col-lg-10">
@@ -33,12 +34,12 @@ const Header = () => {
                   <nav>
                     <ul id="navigation">
                       <li>
-                        <a className="active" href="index.html">
+                        <Link className="active" href="/">
                           home
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="about.html">About</a>
+                        <a href="/about">About</a>
                       </li>
                       <li>
                         <a href="#">
@@ -46,10 +47,10 @@ const Header = () => {
                         </a>
                         <ul className="submenu">
                           <li>
-                            <a href="blog.html">blog</a>
+                            <Link href="/blog">blog</Link>
                           </li>
                           <li>
-                            <a href="single-blog.html">single-blog</a>
+                            <Link href="/single-blog">single-blog</Link>
                           </li>
                         </ul>
                       </li>
@@ -59,21 +60,21 @@ const Header = () => {
                         </a>
                         <ul className="submenu">
                           <li>
-                            <a href="portfolio-work.html">Portfolio work</a>
+                            <Link href="/portfolio-work">Portfolio work</Link>
                           </li>
                           <li>
-                            <a href="work_details.html">work details</a>
+                            <Link href="/work-details">work details</Link>
                           </li>
                           <li>
-                            <a href="services.html">Services</a>
+                            <Link href="/services">Services</Link>
                           </li>
                           <li>
-                            <a href="elements.html">elements</a>
+                            <Link href="/elements">elements</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="contact.html">Contact</a>
+                        <Link href="/contact">Contact</Link>
                       </li>
                     </ul>
                   </nav>

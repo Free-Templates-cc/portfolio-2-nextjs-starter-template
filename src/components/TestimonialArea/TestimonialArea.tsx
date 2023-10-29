@@ -1,6 +1,7 @@
 import React from "react";
 import ThumbImage from "public/images/thumb.webp"
 import Image from "next/image";
+import RBCarousel  from 'react-bootstrap-carousel';
 
 const TestimonialArea = () => {
   return (
@@ -11,7 +12,14 @@ const TestimonialArea = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
-            <div className="testmonial_active owl-carousel">
+  
+            <RBCarousel
+              animation={true}
+              slideshowSpeed={2000}
+              defaultActiveIndex={0}
+              version={4}
+              className="testmonial_active"
+            >
               <div className="single_carousel">
                 <div className="row justify-content-center">
                   <div className="col-lg-6">
@@ -72,7 +80,8 @@ const TestimonialArea = () => {
                   </div>
                 </div>
               </div>
-            </div>
+              </RBCarousel>
+           
           </div>
         </div>
       </div>

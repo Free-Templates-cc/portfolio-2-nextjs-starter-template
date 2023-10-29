@@ -1,5 +1,6 @@
 import "@styles/globals.css";
 import "@styles/styles.css";
+import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 
 import type { AppProps } from "next/app";
 
